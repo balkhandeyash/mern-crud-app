@@ -10,7 +10,7 @@ function UpdateUser() {
     const navigate = useNavigate()
 
     useEffect(()=>{
-        axios.get('https://mern-crud-app-dr9m.onrender.com/getUser/'+id)
+        axios.get('https://mern-crud-app1.onrender.com/getUser/'+id)
         .then(result => {
             console.log(result)
             setName(result.data.name)
@@ -22,7 +22,7 @@ function UpdateUser() {
 
     const Update = (e) => {
         e.preventDefault();
-        axios.put("https://mern-crud-app-dr9m.onrender.com/updateUser/"+id, {name, email, age})
+        axios.put("https://mern-crud-app1.onrender.com/updateUser/"+id, {name, email, age})
         .then(result => {
             console.log(result)
             navigate('/')
