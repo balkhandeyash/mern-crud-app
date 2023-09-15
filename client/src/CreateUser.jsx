@@ -10,7 +10,7 @@ function CreateUser() {
 
     const Submit= (e) => {
         e.preventDefault();
-        axios.post("https://mern-crud-app-dr9m.onrender.com/createUser", {name, email, age})
+        axios.post("https://mern-crud-app1.onrender.com/createUser", {name, email, age})
         .then(result => {
             console.log(result)
             navigate('/')
