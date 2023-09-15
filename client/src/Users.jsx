@@ -13,7 +13,7 @@ function Users() {
     }, [])
 
     const handleDelete = (id) => {
-        axios.delete('http://localhost:3001/deleteUser/'+id)
+        axios.delete('https://mern-crud-app-dr9m.onrender.com/deleteUser/'+id)
         .then(res => {console.log(res)
             window.location.reload()})
         .catch(err => console.log(err))
