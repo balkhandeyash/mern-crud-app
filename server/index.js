@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/crud");
+mongoose.connect("mongodb+srv://root:root@cluster0.lfuzgu1.mongodb.net/crud?retryWrites=true&w=majority");
 
 app.get("/", (req, res) => {
   UserModel.find({})
