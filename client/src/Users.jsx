@@ -7,7 +7,7 @@ function Users() {
     const [users, setUsers] = useState([])
 
     useEffect(()=>{
-        axios.get('http://localhost:3001')
+        axios.get('https://mern-crud-app1.onrender.com/')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     }, [])
